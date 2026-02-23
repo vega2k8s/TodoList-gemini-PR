@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let nextId = todos.length > 0 ? Math.max(...todos.map(t => t.id)) + 1 : 1;
 
     const saveTodos = () => {
+        console.log('saveTodos');
         localStorage.setItem('todos', JSON.stringify(todos));
     };
 
